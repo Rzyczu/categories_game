@@ -1,0 +1,620 @@
+[2025-01-20 17:27:16] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 17:27:18] {"action":"welcome","ip":"/127.0.0.1","nickname":"a1","message":"Welcome, a1!"}
+[2025-01-20 17:27:18] New connection: /127.0.0.1, a1
+[2025-01-20 17:27:20] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"a1"}
+[2025-01-20 17:27:20] AKEMQH: {"action":"game_created","ip":"/127.0.0.1","nickname":"a1","message":"Created a new game (open) with code: AKEMQH"}
+[2025-01-20 17:27:20] AKEMQH: {"action":"lobby","ip":"/127.0.0.1","nickname":"a1","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 17:27:23] AKEMQH: {"action":"start_game","ip":"/127.0.0.1","nickname":"a1"}
+[2025-01-20 17:27:23] AKEMQH: {"action":"error","ip":"/127.0.0.1","nickname":"a1","message":"Game requires at least 2 players to start."}
+[2025-01-20 17:27:41] AKEMQH: {"action":"start_game","ip":"/127.0.0.1","nickname":"a1"}
+[2025-01-20 17:27:41] AKEMQH: {"action":"error","ip":"/127.0.0.1","nickname":"a1","message":"Game requires at least 2 players to start."}
+[2025-01-20 17:33:12] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 17:33:12] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Welcome, {\"nickname\":\"a1\"}!"}
+[2025-01-20 17:33:12] New connection: /127.0.0.1, {"nickname":"a1"}
+[2025-01-20 17:41:21] Communication error with client: Connection reset
+[2025-01-20 17:41:28] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 17:41:28] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"aa\"}","message":"Welcome, {\"nickname\":\"aa\"}!"}
+[2025-01-20 17:41:28] New connection: /127.0.0.1, {"nickname":"aa"}
+[2025-01-20 17:41:34] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"{\"nickname\":\"aa\"}"}
+[2025-01-20 17:41:34] NQJUTM: {"action":"game_created","ip":"/127.0.0.1","nickname":"{\"nickname\":\"aa\"}","message":"Created a new game (open) with code: NQJUTM"}
+[2025-01-20 17:41:34] NQJUTM: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"aa\"}","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 17:41:39] NQJUTM: {"action":"join_game_by_code","game_code":"private void handleCreateGame() {    JsonObject request = new JsonObject();    request.addProperty(\"action\", \"create_game\");    request.addProperty(\"game_type\", \"open\"); // Można dodać wybór typu gry w innym oknie    out.println(request.toString());    outputArea.appendText(\"Game created. Waiting for players...\\n\");}private void handleJoinGame() {    // Wyświetlenie nowego okna z opcjami    TextInputDialog dialog = new TextInputDialog();    dialog.setTitle(\"Join Game\");    dialog.setHeaderText(\"Enter Game Code\");    dialog.setContentText(\"Game Code:\");    dialog.showAndWait().ifPresent(gameCode -> {        JsonObject request = new JsonObject();        request.addProperty(\"action\", \"join_game_by_code\");        request.addProperty(\"game_code\", gameCode);        out.println(request.toString());        outputArea.appendText(\"Joined game with code: \" + gameCode + \"\\n\");    });}private void sendExitRequest() {    JsonObject request = new JsonObject();    request.addProperty(\"action\", \"exit\");    out.println(request.toString());    outputArea.appendText(\"Disconnected from server.\\n\");    // Zamknięcie aplikacji    Stage stage = (Stage) serverAddressField.getScene().getWindow();    stage.close();}","ip":"/127.0.0.1","nickname":"{\"nickname\":\"aa\"}"}
+[2025-01-20 17:41:39] {"action":"error","ip":"/127.0.0.1","nickname":"{\"nickname\":\"aa\"}","message":"Game with code private void handleCreateGame() {    JsonObject request = new JsonObject();    request.addProperty(\"action\", \"create_game\");    request.addProperty(\"game_type\", \"open\"); // Można dodać wybór typu gry w innym oknie    out.println(request.toString());    outputArea.appendText(\"Game created. Waiting for players...\\n\");}private void handleJoinGame() {    // Wyświetlenie nowego okna z opcjami    TextInputDialog dialog = new TextInputDialog();    dialog.setTitle(\"Join Game\");    dialog.setHeaderText(\"Enter Game Code\");    dialog.setContentText(\"Game Code:\");    dialog.showAndWait().ifPresent(gameCode -> {        JsonObject request = new JsonObject();        request.addProperty(\"action\", \"join_game_by_code\");        request.addProperty(\"game_code\", gameCode);        out.println(request.toString());        outputArea.appendText(\"Joined game with code: \" + gameCode + \"\\n\");    });}private void sendExitRequest() {    JsonObject request = new JsonObject();    request.addProperty(\"action\", \"exit\");    out.println(request.toString());    outputArea.appendText(\"Disconnected from server.\\n\");    // Zamknięcie aplikacji    Stage stage = (Stage) serverAddressField.getScene().getWindow();    stage.close();} does not exist."}
+[2025-01-20 17:41:40] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"{\"nickname\":\"aa\"}"}
+[2025-01-20 17:41:40] KBVBSP: {"action":"game_created","ip":"/127.0.0.1","nickname":"{\"nickname\":\"aa\"}","message":"Created a new game (open) with code: KBVBSP"}
+[2025-01-20 17:41:40] KBVBSP: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"aa\"}","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 17:41:42] Communication error with client: Connection reset
+[2025-01-20 18:05:17] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 18:05:17] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Welcome, {\"nickname\":\"a1\"}!"}
+[2025-01-20 18:05:17] New connection: /127.0.0.1, {"nickname":"a1"}
+[2025-01-20 18:05:17] Closing connection with client: {"nickname":"a1"}
+[2025-01-20 18:05:55] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 18:05:55] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a22222\"}","message":"Welcome, {\"nickname\":\"a22222\"}!"}
+[2025-01-20 18:05:55] New connection: /127.0.0.1, {"nickname":"a22222"}
+[2025-01-20 18:05:55] Closing connection with client: {"nickname":"a22222"}
+[2025-01-20 18:09:48] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 18:09:48] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Welcome, {\"nickname\":\"a1\"}!"}
+[2025-01-20 18:09:48] New connection: /127.0.0.1, {"nickname":"a1"}
+[2025-01-20 18:10:56] Communication error with client: Connection reset
+[2025-01-20 18:11:03] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 18:11:03] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"aa11\"}","message":"Welcome, {\"nickname\":\"aa11\"}!"}
+[2025-01-20 18:11:03] New connection: /127.0.0.1, {"nickname":"aa11"}
+[2025-01-20 18:11:20] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 18:11:20] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"aa11\"}","message":"Welcome, {\"nickname\":\"aa11\"}!"}
+[2025-01-20 18:11:20] New connection: /127.0.0.1, {"nickname":"aa11"}
+[2025-01-20 18:12:56] Communication error with client: Connection reset
+[2025-01-20 18:12:56] Communication error with client: Connection reset
+[2025-01-20 18:13:06] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 18:13:06] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Welcome, {\"nickname\":\"a1\"}!"}
+[2025-01-20 18:13:06] New connection: /127.0.0.1, {"nickname":"a1"}
+[2025-01-20 18:13:06] Closing connection with client: {"nickname":"a1"}
+[2025-01-20 18:13:24] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 18:13:24] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Welcome, {\"nickname\":\"a1\"}!"}
+[2025-01-20 18:13:24] New connection: /127.0.0.1, {"nickname":"a1"}
+[2025-01-20 18:14:05] Communication error with client: Connection reset
+[2025-01-20 18:15:36] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 18:15:36] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Welcome, {\"nickname\":\"a1\"}!"}
+[2025-01-20 18:15:36] New connection: /127.0.0.1, {"nickname":"a1"}
+[2025-01-20 18:15:38] Closing connection with client: {"nickname":"a1"}
+[2025-01-20 18:17:45] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 18:17:45] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"Zak\"}","message":"Welcome, {\"nickname\":\"Zak\"}!"}
+[2025-01-20 18:17:45] New connection: /127.0.0.1, {"nickname":"Zak"}
+[2025-01-20 18:17:53] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"{\"nickname\":\"Zak\"}"}
+[2025-01-20 18:17:53] RHLKZG: {"action":"game_created","ip":"/127.0.0.1","nickname":"{\"nickname\":\"Zak\"}","message":"Created a new game (open) with code: RHLKZG"}
+[2025-01-20 18:17:53] RHLKZG: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"Zak\"}","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 18:18:06] RHLKZG: {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"{\"nickname\":\"Zak\"}"}
+[2025-01-20 18:18:06] VXGUBT: {"action":"game_created","ip":"/127.0.0.1","nickname":"{\"nickname\":\"Zak\"}","message":"Created a new game (open) with code: VXGUBT"}
+[2025-01-20 18:18:06] VXGUBT: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"Zak\"}","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 18:18:09] VXGUBT: {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"{\"nickname\":\"Zak\"}"}
+[2025-01-20 18:18:09] IXMTIA: {"action":"game_created","ip":"/127.0.0.1","nickname":"{\"nickname\":\"Zak\"}","message":"Created a new game (open) with code: IXMTIA"}
+[2025-01-20 18:18:09] IXMTIA: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"Zak\"}","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 18:18:39] IXMTIA: {"action":"join_game_by_code","game_code":"","ip":"/127.0.0.1","nickname":"{\"nickname\":\"Zak\"}"}
+[2025-01-20 18:18:39] {"action":"error","ip":"/127.0.0.1","nickname":"{\"nickname\":\"Zak\"}","message":"Game with code  does not exist."}
+[2025-01-20 18:20:14] Communication error with client: Connection reset
+[2025-01-20 18:20:36] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 18:20:36] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Welcome, {\"nickname\":\"a1\"}!"}
+[2025-01-20 18:20:36] New connection: /127.0.0.1, {"nickname":"a1"}
+[2025-01-20 18:20:43] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}"}
+[2025-01-20 18:20:43] BQSXPT: {"action":"game_created","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Created a new game (open) with code: BQSXPT"}
+[2025-01-20 18:20:43] BQSXPT: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 18:22:15] Communication error with client: Connection reset
+[2025-01-20 18:22:22] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 18:22:22] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Welcome, {\"nickname\":\"a1\"}!"}
+[2025-01-20 18:22:22] New connection: /127.0.0.1, {"nickname":"a1"}
+[2025-01-20 18:22:27] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}"}
+[2025-01-20 18:22:27] NNDTLX: {"action":"game_created","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Created a new game (open) with code: NNDTLX"}
+[2025-01-20 18:22:27] NNDTLX: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 18:23:28] Communication error with client: Connection reset
+[2025-01-20 18:23:34] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 18:23:34] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Welcome, {\"nickname\":\"a1\"}!"}
+[2025-01-20 18:23:34] New connection: /127.0.0.1, {"nickname":"a1"}
+[2025-01-20 18:23:38] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}"}
+[2025-01-20 18:23:38] IHBFIM: {"action":"game_created","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Created a new game (open) with code: IHBFIM"}
+[2025-01-20 18:23:38] IHBFIM: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 18:23:44] IHBFIM: {"action":"join_game_random","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}"}
+[2025-01-20 18:23:44] IXMTIA: {"action":"joined_game","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Joined a random game: IXMTIA"}
+[2025-01-20 18:23:44] IXMTIA: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-20 18:23:50] IXMTIA: {"action":"create_game","game_type":"close","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}"}
+[2025-01-20 18:23:50] UZBORV: {"action":"game_created","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Created a new game (close) with code: UZBORV"}
+[2025-01-20 18:23:50] UZBORV: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 19:45:46] Communication error with client: Connection reset
+[2025-01-20 19:46:19] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 19:46:19] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"1234\"}","message":"Welcome, {\"nickname\":\"1234\"}!"}
+[2025-01-20 19:46:19] New connection: /127.0.0.1, {"nickname":"1234"}
+[2025-01-20 19:46:25] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"{\"nickname\":\"1234\"}"}
+[2025-01-20 19:46:25] KWROZV: {"action":"game_created","ip":"/127.0.0.1","nickname":"{\"nickname\":\"1234\"}","message":"Created a new game (open) with code: KWROZV"}
+[2025-01-20 19:46:25] KWROZV: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"1234\"}","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 19:54:04] Communication error with client: Connection reset
+[2025-01-20 19:54:19] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 19:54:19] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"ddd\"}","message":"Welcome, {\"nickname\":\"ddd\"}!"}
+[2025-01-20 19:54:19] New connection: /127.0.0.1, {"nickname":"ddd"}
+[2025-01-20 19:54:28] {"action":"join_game_by_code","game_code":"KWROZV","ip":"/127.0.0.1","nickname":"{\"nickname\":\"ddd\"}"}
+[2025-01-20 19:54:28] KWROZV: {"action":"joined_game","ip":"/127.0.0.1","nickname":"{\"nickname\":\"ddd\"}","message":"Joined the game: KWROZV"}
+[2025-01-20 19:54:28] KWROZV: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"ddd\"}","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-20 19:59:05] Communication error with client: Connection reset
+[2025-01-20 19:59:10] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 19:59:10] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Welcome, {\"nickname\":\"a1\"}!"}
+[2025-01-20 19:59:10] New connection: /127.0.0.1, {"nickname":"a1"}
+[2025-01-20 19:59:16] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}"}
+[2025-01-20 19:59:16] FXGXDN: {"action":"game_created","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Created a new game (open) with code: FXGXDN"}
+[2025-01-20 19:59:16] FXGXDN: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 19:59:24] Communication error with client: Connection reset
+[2025-01-20 20:00:04] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 20:00:04] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Welcome, {\"nickname\":\"a1\"}!"}
+[2025-01-20 20:00:04] New connection: /127.0.0.1, {"nickname":"a1"}
+[2025-01-20 20:00:13] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 20:00:13] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a2\"}","message":"Welcome, {\"nickname\":\"a2\"}!"}
+[2025-01-20 20:00:13] New connection: /127.0.0.1, {"nickname":"a2"}
+[2025-01-20 20:00:21] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 20:00:21] {"action":"welcome","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a3\"}","message":"Welcome, {\"nickname\":\"a3\"}!"}
+[2025-01-20 20:00:21] New connection: /127.0.0.1, {"nickname":"a3"}
+[2025-01-20 20:00:27] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}"}
+[2025-01-20 20:00:27] CTVRRN: {"action":"game_created","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Created a new game (open) with code: CTVRRN"}
+[2025-01-20 20:00:27] CTVRRN: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a1\"}","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 20:00:34] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a2\"}"}
+[2025-01-20 20:00:34] CTVRRN: {"action":"joined_game","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a2\"}","message":"Joined a random game: CTVRRN"}
+[2025-01-20 20:00:34] CTVRRN: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a2\"}","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-20 20:00:38] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a3\"}"}
+[2025-01-20 20:00:38] CTVRRN: {"action":"joined_game","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a3\"}","message":"Joined a random game: CTVRRN"}
+[2025-01-20 20:00:38] CTVRRN: {"action":"lobby","ip":"/127.0.0.1","nickname":"{\"nickname\":\"a3\"}","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-20 21:53:29] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 21:53:29] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq","message":"Welcome, zaq!"}
+[2025-01-20 21:53:29] New connection: /127.0.0.1, zaq
+[2025-01-20 21:53:37] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 21:53:37] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw","message":"Welcome, xsw!"}
+[2025-01-20 21:53:37] New connection: /127.0.0.1, xsw
+[2025-01-20 21:53:48] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 21:53:48] {"action":"welcome","ip":"/127.0.0.1","nickname":"cde","message":"Welcome, cde!"}
+[2025-01-20 21:53:48] New connection: /127.0.0.1, cde
+[2025-01-20 21:53:53] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-20 21:53:53] EMNZHX: {"action":"game_created","ip":"/127.0.0.1","nickname":"zaq","message":"Created a new game (open) with code: EMNZHX"}
+[2025-01-20 21:53:53] EMNZHX: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 21:54:11] {"action":"join_game_by_code","game_code":"EMNZHX","ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-20 21:54:11] EMNZHX: {"action":"joined_game","ip":"/127.0.0.1","nickname":"cde","message":"Joined the game: EMNZHX"}
+[2025-01-20 21:54:11] EMNZHX: {"action":"lobby","ip":"/127.0.0.1","nickname":"cde","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-20 21:54:21] {"action":"join_game_by_code","game_code":"EMNZHX","ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-20 21:54:21] EMNZHX: {"action":"joined_game","ip":"/127.0.0.1","nickname":"xsw","message":"Joined the game: EMNZHX"}
+[2025-01-20 21:54:21] EMNZHX: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsw","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-20 21:55:52] EMNZHX: {"action":"start_game","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-20 22:00:11] EMNZHX: {"action":"start_game","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-20 22:00:16] EMNZHX: {"action":"start_game","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-20 22:00:47] EMNZHX: {"action":"start_game","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-20 22:02:03] Communication error with client: Connection reset
+[2025-01-20 22:02:05] Communication error with client: Connection reset
+[2025-01-20 22:02:11] Communication error with client: Connection reset
+[2025-01-20 23:11:19] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 23:11:19] {"action":"welcome","ip":"/127.0.0.1","nickname":"aaa","message":"Welcome, aaa!"}
+[2025-01-20 23:11:19] New connection: /127.0.0.1, aaa
+[2025-01-20 23:11:29] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 23:11:29] {"action":"welcome","ip":"/127.0.0.1","nickname":"a2","message":"Welcome, a2!"}
+[2025-01-20 23:11:29] New connection: /127.0.0.1, a2
+[2025-01-20 23:12:08] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 23:12:08] {"action":"welcome","ip":"/127.0.0.1","nickname":"a3","message":"Welcome, a3!"}
+[2025-01-20 23:12:08] New connection: /127.0.0.1, a3
+[2025-01-20 23:12:18] {"action":"create_game","game_type":"close","ip":"/127.0.0.1","nickname":"aaa"}
+[2025-01-20 23:12:18] WFNZIZ: {"action":"game_created","ip":"/127.0.0.1","nickname":"aaa","message":"Created a new game (close) with code: WFNZIZ"}
+[2025-01-20 23:12:18] WFNZIZ: {"action":"lobby","ip":"/127.0.0.1","nickname":"aaa","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 23:12:57] {"action":"join_game_by_code","game_code":"WFNZIZ","ip":"/127.0.0.1","nickname":"a3"}
+[2025-01-20 23:12:57] WFNZIZ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"a3","message":"Joined the game: WFNZIZ"}
+[2025-01-20 23:12:57] WFNZIZ: {"action":"lobby","ip":"/127.0.0.1","nickname":"a3","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-20 23:13:13] {"action":"join_game_by_code","game_code":"WFNZIZ","ip":"/127.0.0.1","nickname":"a2"}
+[2025-01-20 23:13:13] WFNZIZ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"a2","message":"Joined the game: WFNZIZ"}
+[2025-01-20 23:13:13] WFNZIZ: {"action":"lobby","ip":"/127.0.0.1","nickname":"a2","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-20 23:13:18] WFNZIZ: {"action":"start_game","ip":"/127.0.0.1","nickname":"aaa"}
+[2025-01-20 23:18:25] Communication error with client: Connection reset
+[2025-01-20 23:18:25] Communication error with client: Connection reset
+[2025-01-20 23:18:25] Communication error with client: Connection reset
+[2025-01-20 23:19:26] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 23:19:26] {"action":"welcome","ip":"/127.0.0.1","nickname":"a1","message":"Welcome, a1!"}
+[2025-01-20 23:19:26] New connection: /127.0.0.1, a1
+[2025-01-20 23:19:33] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 23:19:33] {"action":"welcome","ip":"/127.0.0.1","nickname":"a2","message":"Welcome, a2!"}
+[2025-01-20 23:19:33] New connection: /127.0.0.1, a2
+[2025-01-20 23:19:38] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 23:19:38] {"action":"welcome","ip":"/127.0.0.1","nickname":"a3","message":"Welcome, a3!"}
+[2025-01-20 23:19:38] New connection: /127.0.0.1, a3
+[2025-01-20 23:19:50] {"action":"create_game","game_type":"close","ip":"/127.0.0.1","nickname":"a1"}
+[2025-01-20 23:19:50] NEKRAI: {"action":"game_created","ip":"/127.0.0.1","nickname":"a1","message":"Created a new game (close) with code: NEKRAI"}
+[2025-01-20 23:19:50] NEKRAI: {"action":"lobby","ip":"/127.0.0.1","nickname":"a1","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 23:20:08] {"action":"join_game_by_code","game_code":"NEKRAI","ip":"/127.0.0.1","nickname":"a2"}
+[2025-01-20 23:20:08] NEKRAI: {"action":"joined_game","ip":"/127.0.0.1","nickname":"a2","message":"Joined the game: NEKRAI"}
+[2025-01-20 23:20:08] NEKRAI: {"action":"lobby","ip":"/127.0.0.1","nickname":"a2","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-20 23:20:30] Communication error with client: Connection reset
+[2025-01-20 23:20:31] Communication error with client: Connection reset
+[2025-01-20 23:20:32] Communication error with client: Connection reset
+[2025-01-20 23:20:54] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 23:20:54] {"action":"welcome","ip":"/127.0.0.1","nickname":"a1","message":"Welcome, a1!"}
+[2025-01-20 23:20:54] New connection: /127.0.0.1, a1
+[2025-01-20 23:21:01] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 23:21:01] {"action":"welcome","ip":"/127.0.0.1","nickname":"a2","message":"Welcome, a2!"}
+[2025-01-20 23:21:01] New connection: /127.0.0.1, a2
+[2025-01-20 23:21:06] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-20 23:21:06] {"action":"welcome","ip":"/127.0.0.1","nickname":"a3","message":"Welcome, a3!"}
+[2025-01-20 23:21:06] New connection: /127.0.0.1, a3
+[2025-01-20 23:21:31] {"action":"create_game","game_type":"close","ip":"/127.0.0.1","nickname":"a1"}
+[2025-01-20 23:21:31] ATDBCN: {"action":"game_created","ip":"/127.0.0.1","nickname":"a1","message":"Created a new game (close) with code: ATDBCN"}
+[2025-01-20 23:21:31] ATDBCN: {"action":"lobby","ip":"/127.0.0.1","nickname":"a1","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-20 23:21:51] {"action":"join_game_by_code","game_code":"ATDBCN","ip":"/127.0.0.1","nickname":"a2"}
+[2025-01-20 23:21:51] ATDBCN: {"action":"joined_game","ip":"/127.0.0.1","nickname":"a2","message":"Joined the game: ATDBCN"}
+[2025-01-20 23:21:51] ATDBCN: {"action":"lobby","ip":"/127.0.0.1","nickname":"a2","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-20 23:22:00] {"action":"join_game_by_code","game_code":"ATDBCN","ip":"/127.0.0.1","nickname":"a3"}
+[2025-01-20 23:22:00] ATDBCN: {"action":"joined_game","ip":"/127.0.0.1","nickname":"a3","message":"Joined the game: ATDBCN"}
+[2025-01-20 23:22:00] ATDBCN: {"action":"lobby","ip":"/127.0.0.1","nickname":"a3","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-20 23:22:18] ATDBCN: {"action":"start_game","ip":"/127.0.0.1","nickname":"a1"}
+[2025-01-21 02:07:23] Communication error with client: Connection reset
+[2025-01-21 02:07:23] Communication error with client: Connection reset
+[2025-01-21 02:07:23] Communication error with client: Connection reset
+[2025-01-21 02:07:46] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 02:07:46] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq","message":"Welcome, zaq!"}
+[2025-01-21 02:07:46] New connection: /127.0.0.1, zaq
+[2025-01-21 02:07:53] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 02:07:53] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq","message":"Welcome, zaq!"}
+[2025-01-21 02:07:53] New connection: /127.0.0.1, zaq
+[2025-01-21 02:07:58] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 02:07:58] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq","message":"Welcome, zaq!"}
+[2025-01-21 02:07:58] New connection: /127.0.0.1, zaq
+[2025-01-21 02:08:10] {"action":"create_game","game_type":"close","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 02:08:10] OXSRIG: {"action":"game_created","ip":"/127.0.0.1","nickname":"zaq","message":"Created a new game (close) with code: OXSRIG"}
+[2025-01-21 02:08:10] OXSRIG: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 02:08:31] {"action":"join_game_by_code","game_code":"zaq","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 02:08:31] {"action":"error","ip":"/127.0.0.1","nickname":"zaq","message":"Game with code zaq does not exist."}
+[2025-01-21 02:08:52] {"action":"join_game_by_code","game_code":"OXSRIG","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 02:08:52] OXSRIG: {"action":"joined_game","ip":"/127.0.0.1","nickname":"zaq","message":"Joined the game: OXSRIG"}
+[2025-01-21 02:08:52] OXSRIG: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 02:09:01] {"action":"join_game_by_code","game_code":"OXSRIG","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 02:09:01] OXSRIG: {"action":"joined_game","ip":"/127.0.0.1","nickname":"zaq","message":"Joined the game: OXSRIG"}
+[2025-01-21 02:09:01] OXSRIG: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 02:09:04] OXSRIG: {"action":"start_game","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 02:09:21] Communication error with client: Connection reset
+[2025-01-21 02:09:23] Communication error with client: Connection reset
+[2025-01-21 02:09:25] Communication error with client: Connection reset
+[2025-01-21 02:21:51] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 02:21:51] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq1","message":"Welcome, zaq1!"}
+[2025-01-21 02:21:51] New connection: /127.0.0.1, zaq1
+[2025-01-21 02:22:00] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 02:22:00] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw2","message":"Welcome, xsw2!"}
+[2025-01-21 02:22:00] New connection: /127.0.0.1, xsw2
+[2025-01-21 02:22:09] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 02:22:09] {"action":"welcome","ip":"/127.0.0.1","nickname":"cde3","message":"Welcome, cde3!"}
+[2025-01-21 02:22:09] New connection: /127.0.0.1, cde3
+[2025-01-21 02:22:16] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 02:22:16] XBXTOJ: {"action":"game_created","ip":"/127.0.0.1","nickname":"zaq1","message":"Created a new game (open) with code: XBXTOJ"}
+[2025-01-21 02:22:16] XBXTOJ: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq1","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 02:22:21] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"xsw2"}
+[2025-01-21 02:22:21] XBXTOJ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"xsw2","message":"Joined a random game: XBXTOJ"}
+[2025-01-21 02:22:21] XBXTOJ: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsw2","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 02:22:27] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"cde3"}
+[2025-01-21 02:22:27] XBXTOJ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"cde3","message":"Joined a random game: XBXTOJ"}
+[2025-01-21 02:22:27] XBXTOJ: {"action":"lobby","ip":"/127.0.0.1","nickname":"cde3","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 02:22:29] XBXTOJ: {"action":"start_game","ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 02:31:30] Communication error with client: Connection reset
+[2025-01-21 02:31:30] Communication error with client: Connection reset
+[2025-01-21 02:31:30] Communication error with client: Connection reset
+[2025-01-21 02:32:40] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 02:32:40] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq1","message":"Welcome, zaq1!"}
+[2025-01-21 02:32:40] New connection: /127.0.0.1, zaq1
+[2025-01-21 02:32:47] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 02:32:47] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw2","message":"Welcome, xsw2!"}
+[2025-01-21 02:32:47] New connection: /127.0.0.1, xsw2
+[2025-01-21 02:32:55] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 02:32:56] {"action":"welcome","ip":"/127.0.0.1","nickname":"vfr4","message":"Welcome, vfr4!"}
+[2025-01-21 02:32:56] New connection: /127.0.0.1, vfr4
+[2025-01-21 02:33:04] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 02:33:04] FHIVXP: {"action":"game_created","ip":"/127.0.0.1","nickname":"zaq1","message":"Created a new game (open) with code: FHIVXP"}
+[2025-01-21 02:33:04] FHIVXP: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq1","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 02:33:08] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"vfr4"}
+[2025-01-21 02:33:08] XBXTOJ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"vfr4","message":"Joined a random game: XBXTOJ"}
+[2025-01-21 02:33:08] XBXTOJ: {"action":"lobby","ip":"/127.0.0.1","nickname":"vfr4","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 02:36:37] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 02:36:37] {"action":"welcome","ip":"/127.0.0.1","nickname":"a1","message":"Welcome, a1!"}
+[2025-01-21 02:36:37] New connection: /127.0.0.1, a1
+[2025-01-21 02:36:46] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 02:36:46] {"action":"welcome","ip":"/127.0.0.1","nickname":"a2","message":"Welcome, a2!"}
+[2025-01-21 02:36:46] New connection: /127.0.0.1, a2
+[2025-01-21 02:36:53] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 02:36:53] {"action":"welcome","ip":"/127.0.0.1","nickname":"a3","message":"Welcome, a3!"}
+[2025-01-21 02:36:53] New connection: /127.0.0.1, a3
+[2025-01-21 02:36:59] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"a1"}
+[2025-01-21 02:36:59] IIURLQ: {"action":"game_created","ip":"/127.0.0.1","nickname":"a1","message":"Created a new game (open) with code: IIURLQ"}
+[2025-01-21 02:36:59] IIURLQ: {"action":"lobby","ip":"/127.0.0.1","nickname":"a1","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 02:37:04] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"a3"}
+[2025-01-21 02:37:04] IIURLQ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"a3","message":"Joined a random game: IIURLQ"}
+[2025-01-21 02:37:04] IIURLQ: {"action":"lobby","ip":"/127.0.0.1","nickname":"a3","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 02:37:08] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"a2"}
+[2025-01-21 02:37:08] IIURLQ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"a2","message":"Joined a random game: IIURLQ"}
+[2025-01-21 02:37:08] IIURLQ: {"action":"lobby","ip":"/127.0.0.1","nickname":"a2","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 02:37:17] IIURLQ: {"action":"start_game","ip":"/127.0.0.1","nickname":"a1"}
+[2025-01-21 14:19:54] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 14:19:54] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq1","message":"Welcome, zaq1!"}
+[2025-01-21 14:19:54] New connection: /127.0.0.1, zaq1
+[2025-01-21 14:20:01] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 14:20:01] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw2","message":"Welcome, xsw2!"}
+[2025-01-21 14:20:01] New connection: /127.0.0.1, xsw2
+[2025-01-21 14:20:06] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 14:20:06] {"action":"welcome","ip":"/127.0.0.1","nickname":"cde3","message":"Welcome, cde3!"}
+[2025-01-21 14:20:06] New connection: /127.0.0.1, cde3
+[2025-01-21 14:20:13] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 14:20:13] RKHUQE: {"action":"game_created","ip":"/127.0.0.1","nickname":"zaq1","message":"Created a new game (open) with code: RKHUQE"}
+[2025-01-21 14:20:13] RKHUQE: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq1","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 14:20:19] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"xsw2"}
+[2025-01-21 14:20:19] RKHUQE: {"action":"joined_game","ip":"/127.0.0.1","nickname":"xsw2","message":"Joined a random game: RKHUQE"}
+[2025-01-21 14:20:19] RKHUQE: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsw2","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 14:20:24] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"cde3"}
+[2025-01-21 14:20:24] RKHUQE: {"action":"joined_game","ip":"/127.0.0.1","nickname":"cde3","message":"Joined a random game: RKHUQE"}
+[2025-01-21 14:20:24] RKHUQE: {"action":"lobby","ip":"/127.0.0.1","nickname":"cde3","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 14:20:27] RKHUQE: {"action":"start_game","ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 15:25:52] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:25:52] {"action":"welcome","ip":"/127.0.0.1","nickname":"a1","message":"Welcome, a1!"}
+[2025-01-21 15:25:52] New connection: /127.0.0.1, a1
+[2025-01-21 15:25:58] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:25:58] {"action":"welcome","ip":"/127.0.0.1","nickname":"a222","message":"Welcome, a222!"}
+[2025-01-21 15:25:58] New connection: /127.0.0.1, a222
+[2025-01-21 15:26:01] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:26:01] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw","message":"Welcome, xsw!"}
+[2025-01-21 15:26:01] New connection: /127.0.0.1, xsw
+[2025-01-21 15:26:05] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 15:26:05] VRENBY: {"action":"game_created","ip":"/127.0.0.1","nickname":"xsw","message":"Created a new game (open) with code: VRENBY"}
+[2025-01-21 15:26:05] VRENBY: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsw","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 15:26:08] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"a1"}
+[2025-01-21 15:26:08] VRENBY: {"action":"joined_game","ip":"/127.0.0.1","nickname":"a1","message":"Joined a random game: VRENBY"}
+[2025-01-21 15:26:08] VRENBY: {"action":"lobby","ip":"/127.0.0.1","nickname":"a1","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 15:26:12] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"a222"}
+[2025-01-21 15:26:12] VRENBY: {"action":"joined_game","ip":"/127.0.0.1","nickname":"a222","message":"Joined a random game: VRENBY"}
+[2025-01-21 15:26:12] VRENBY: {"action":"lobby","ip":"/127.0.0.1","nickname":"a222","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 15:26:13] VRENBY: {"action":"start_game","ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 15:26:37] VRENBY: {"action":"submit_answers","answers":{"Country":"AAAA","City":"Gfds","Animal":"SFSD","Plant":"GSDS","Food":"FDDSD"},"ip":"/127.0.0.1","nickname":"a1"}
+[2025-01-21 15:26:43] VRENBY: {"action":"submit_answers","answers":{"Country":"Gfds","City":"sadsda","Animal":"sadsa","Plant":"dsadsa","Food":"dsasda"},"ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 15:26:52] VRENBY: {"action":"submit_answers","answers":{"Country":"GfdsGfds","City":"Gfds","Animal":"GfdsGfds","Plant":"GfdsGfds","Food":"GfdsGfds"},"ip":"/127.0.0.1","nickname":"a222"}
+[2025-01-21 15:27:45] VRENBY: {"action":"submit_answers","answers":{"Country":"aaa","City":"aaa","Animal":"aaa","Plant":"aaa","Food":"aaaa"},"ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 15:30:55] Communication error with client: Connection reset
+[2025-01-21 15:30:55] Communication error with client: Connection reset
+[2025-01-21 15:31:19] Communication error with client: Connection reset
+[2025-01-21 15:33:35] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:33:35] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq","message":"Welcome, zaq!"}
+[2025-01-21 15:33:35] New connection: /127.0.0.1, zaq
+[2025-01-21 15:33:41] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:33:41] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw","message":"Welcome, xsw!"}
+[2025-01-21 15:33:41] New connection: /127.0.0.1, xsw
+[2025-01-21 15:33:46] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:33:46] {"action":"welcome","ip":"/127.0.0.1","nickname":"cde","message":"Welcome, cde!"}
+[2025-01-21 15:33:46] New connection: /127.0.0.1, cde
+[2025-01-21 15:33:50] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 15:33:50] UFYFVQ: {"action":"game_created","ip":"/127.0.0.1","nickname":"zaq","message":"Created a new game (open) with code: UFYFVQ"}
+[2025-01-21 15:33:50] UFYFVQ: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 15:33:53] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 15:33:53] UFYFVQ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"xsw","message":"Joined a random game: UFYFVQ"}
+[2025-01-21 15:33:53] UFYFVQ: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsw","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 15:33:57] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 15:33:57] UFYFVQ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"cde","message":"Joined a random game: UFYFVQ"}
+[2025-01-21 15:33:57] UFYFVQ: {"action":"lobby","ip":"/127.0.0.1","nickname":"cde","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 15:34:09] UFYFVQ: {"action":"start_game","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 15:34:47] UFYFVQ: {"action":"submit_answers","answers":{"Country":"Iglo","City":"Iglos","Animal":"Iglos","Plant":"Iglos","Food":"Iglox"},"ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 15:34:51] UFYFVQ: {"action":"submit_answers","answers":{"Country":"Iglo","City":"Iglo","Animal":"Iglo","Plant":"Iglo","Food":"Iglo"},"ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 15:35:00] UFYFVQ: {"action":"submit_answers","answers":{"Country":"Iglo","City":"Iglo","Animal":"ss","Plant":"sss","Food":"ssssss"},"ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 15:37:47] Communication error with client: Connection reset
+[2025-01-21 15:37:47] Communication error with client: Connection reset
+[2025-01-21 15:38:01] Communication error with client: Connection reset
+[2025-01-21 15:40:24] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:40:25] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq1","message":"Welcome, zaq1!"}
+[2025-01-21 15:40:25] New connection: /127.0.0.1, zaq1
+[2025-01-21 15:40:30] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:40:30] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw","message":"Welcome, xsw!"}
+[2025-01-21 15:40:30] New connection: /127.0.0.1, xsw
+[2025-01-21 15:40:40] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:40:40] {"action":"welcome","ip":"/127.0.0.1","nickname":"cde","message":"Welcome, cde!"}
+[2025-01-21 15:40:40] New connection: /127.0.0.1, cde
+[2025-01-21 15:40:48] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 15:40:48] YHCWYJ: {"action":"game_created","ip":"/127.0.0.1","nickname":"zaq1","message":"Created a new game (open) with code: YHCWYJ"}
+[2025-01-21 15:40:48] YHCWYJ: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq1","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 15:40:52] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 15:40:52] YHCWYJ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"xsw","message":"Joined a random game: YHCWYJ"}
+[2025-01-21 15:40:52] YHCWYJ: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsw","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 15:40:56] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 15:40:56] YHCWYJ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"cde","message":"Joined a random game: YHCWYJ"}
+[2025-01-21 15:40:56] YHCWYJ: {"action":"lobby","ip":"/127.0.0.1","nickname":"cde","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 15:41:00] YHCWYJ: {"action":"start_game","ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 15:41:36] YHCWYJ: {"action":"submit_answers","answers":{"Country":"nigga","City":"niggaw","Animal":"niggae"},"ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 15:41:58] YHCWYJ: {"action":"submit_answers","answers":{"Country":"nigga","City":"ssss","Animal":"dddd","Plant":"eeee","Food":"rrrrr"},"ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 15:42:00] YHCWYJ: {"action":"submit_answers","answers":{"Country":"nigga","City":"nigga","Animal":"nigga","Plant":"nigga"},"ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 15:46:24] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:46:25] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq","message":"Welcome, zaq!"}
+[2025-01-21 15:46:25] New connection: /127.0.0.1, zaq
+[2025-01-21 15:46:28] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:46:28] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw","message":"Welcome, xsw!"}
+[2025-01-21 15:46:28] New connection: /127.0.0.1, xsw
+[2025-01-21 15:46:30] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:46:31] {"action":"welcome","ip":"/127.0.0.1","nickname":"cde","message":"Welcome, cde!"}
+[2025-01-21 15:46:31] New connection: /127.0.0.1, cde
+[2025-01-21 15:46:35] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 15:46:35] ADIKGJ: {"action":"game_created","ip":"/127.0.0.1","nickname":"zaq","message":"Created a new game (open) with code: ADIKGJ"}
+[2025-01-21 15:46:35] ADIKGJ: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 15:46:39] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 15:46:39] ADIKGJ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"xsw","message":"Joined a random game: ADIKGJ"}
+[2025-01-21 15:46:39] ADIKGJ: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsw","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 15:46:41] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 15:46:41] ADIKGJ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"cde","message":"Joined a random game: ADIKGJ"}
+[2025-01-21 15:46:41] ADIKGJ: {"action":"lobby","ip":"/127.0.0.1","nickname":"cde","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 15:46:44] ADIKGJ: {"action":"start_game","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 15:47:13] ADIKGJ: {"action":"submit_answers","answers":{"Country":"eeeedasdas","City":"dsadas","Animal":"sasa","Plant":"as"},"ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 15:47:15] ADIKGJ: {"action":"submit_answers","answers":{"Country":"eeeeds","City":"eeeed","Animal":"eeeeds","Plant":"eeeeds"},"ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 15:47:24] ADIKGJ: {"action":"submit_answers","answers":{"Country":"eeeed","City":"eeeed","Animal":"eeeed","Plant":"eeeed","Food":"eeeed"},"ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 15:51:11] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:51:11] {"action":"welcome","ip":"/127.0.0.1","nickname":"ZAQ","message":"Welcome, ZAQ!"}
+[2025-01-21 15:51:11] New connection: /127.0.0.1, ZAQ
+[2025-01-21 15:51:13] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:51:13] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq","message":"Welcome, zaq!"}
+[2025-01-21 15:51:13] New connection: /127.0.0.1, zaq
+[2025-01-21 15:51:16] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:51:16] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsws","message":"Welcome, xsws!"}
+[2025-01-21 15:51:16] New connection: /127.0.0.1, xsws
+[2025-01-21 15:51:19] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"ZAQ"}
+[2025-01-21 15:51:19] JJWSWA: {"action":"game_created","ip":"/127.0.0.1","nickname":"ZAQ","message":"Created a new game (open) with code: JJWSWA"}
+[2025-01-21 15:51:19] JJWSWA: {"action":"lobby","ip":"/127.0.0.1","nickname":"ZAQ","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 15:51:22] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 15:51:22] JJWSWA: {"action":"joined_game","ip":"/127.0.0.1","nickname":"zaq","message":"Joined a random game: JJWSWA"}
+[2025-01-21 15:51:22] JJWSWA: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 15:51:24] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"xsws"}
+[2025-01-21 15:51:24] JJWSWA: {"action":"joined_game","ip":"/127.0.0.1","nickname":"xsws","message":"Joined a random game: JJWSWA"}
+[2025-01-21 15:51:24] JJWSWA: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsws","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 15:51:27] JJWSWA: {"action":"start_game","ip":"/127.0.0.1","nickname":"ZAQ"}
+[2025-01-21 15:51:55] JJWSWA: {"action":"submit_answers","answers":{"Country":"bbbb","City":"bbb","Animal":"bbbd","Plant":"dfsds","Food":"ssdsd"},"ip":"/127.0.0.1","nickname":"xsws"}
+[2025-01-21 15:51:57] JJWSWA: {"action":"submit_answers","answers":{"Country":"bbbb","City":"bbb","Animal":"bb","Plant":"bbb"},"ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 15:51:58] JJWSWA: {"action":"submit_answers","answers":{"Country":"aaa","City":"aaaa","Animal":"cccc","Plant":"vvvv","Food":"bbbbb"},"ip":"/127.0.0.1","nickname":"ZAQ"}
+[2025-01-21 15:55:15] Communication error with client: Connection reset
+[2025-01-21 15:55:15] Communication error with client: Connection reset
+[2025-01-21 15:55:15] Communication error with client: Connection reset
+[2025-01-21 15:55:50] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:55:50] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq1","message":"Welcome, zaq1!"}
+[2025-01-21 15:55:50] New connection: /127.0.0.1, zaq1
+[2025-01-21 15:55:54] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:55:54] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw","message":"Welcome, xsw!"}
+[2025-01-21 15:55:54] New connection: /127.0.0.1, xsw
+[2025-01-21 15:56:00] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 15:56:00] {"action":"welcome","ip":"/127.0.0.1","nickname":"cdedd","message":"Welcome, cdedd!"}
+[2025-01-21 15:56:00] New connection: /127.0.0.1, cdedd
+[2025-01-21 15:56:03] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 15:56:03] DHHSCL: {"action":"game_created","ip":"/127.0.0.1","nickname":"zaq1","message":"Created a new game (open) with code: DHHSCL"}
+[2025-01-21 15:56:03] DHHSCL: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq1","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 15:56:06] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"cdedd"}
+[2025-01-21 15:56:06] JJWSWA: {"action":"joined_game","ip":"/127.0.0.1","nickname":"cdedd","message":"Joined a random game: JJWSWA"}
+[2025-01-21 15:56:06] JJWSWA: {"action":"lobby","ip":"/127.0.0.1","nickname":"cdedd","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 15:56:16] {"action":"join_game_by_code","game_code":"","ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 15:56:16] {"action":"error","ip":"/127.0.0.1","nickname":"xsw","message":"Game with code  does not exist."}
+[2025-01-21 16:00:53] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:00:53] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq","message":"Welcome, zaq!"}
+[2025-01-21 16:00:53] New connection: /127.0.0.1, zaq
+[2025-01-21 16:00:57] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:00:57] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw","message":"Welcome, xsw!"}
+[2025-01-21 16:00:57] New connection: /127.0.0.1, xsw
+[2025-01-21 16:01:00] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:01:00] {"action":"welcome","ip":"/127.0.0.1","nickname":"cde","message":"Welcome, cde!"}
+[2025-01-21 16:01:00] New connection: /127.0.0.1, cde
+[2025-01-21 16:01:06] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 16:01:06] IQICGS: {"action":"game_created","ip":"/127.0.0.1","nickname":"zaq","message":"Created a new game (open) with code: IQICGS"}
+[2025-01-21 16:01:06] IQICGS: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 16:01:09] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 16:01:09] IQICGS: {"action":"joined_game","ip":"/127.0.0.1","nickname":"xsw","message":"Joined a random game: IQICGS"}
+[2025-01-21 16:01:09] IQICGS: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsw","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 16:01:12] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 16:01:12] IQICGS: {"action":"joined_game","ip":"/127.0.0.1","nickname":"cde","message":"Joined a random game: IQICGS"}
+[2025-01-21 16:01:12] IQICGS: {"action":"lobby","ip":"/127.0.0.1","nickname":"cde","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 16:01:14] IQICGS: {"action":"start_game","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 16:01:37] IQICGS: {"action":"submit_answers","answers":{"Country":"ooooo","City":"oooooo","Animal":"o","Food":"ooooo"},"ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 16:01:38] IQICGS: {"action":"submit_answers","answers":{"Country":"0000","City":"0009","Animal":"oooo"},"ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 16:01:40] IQICGS: {"action":"submit_answers","answers":{"Country":"zaq1","City":"wqeeqw","Animal":"weqwq","Plant":"wqew","Food":"qweqw"},"ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 16:01:52] IQICGS: {"action":"submit_answers","answers":{"Country":"eeee","City":"e"},"ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 16:01:54] IQICGS: {"action":"submit_answers","answers":{"Country":"ee","City":"eee","Animal":"ee"},"ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 16:01:55] IQICGS: {"action":"submit_answers","answers":{"Country":"e","City":"eeee","Animal":"ee","Plant":"ee","Food":"eee"},"ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 16:10:36] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:10:36] {"action":"welcome","ip":"/127.0.0.1","nickname":"azq","message":"Welcome, azq!"}
+[2025-01-21 16:10:36] New connection: /127.0.0.1, azq
+[2025-01-21 16:10:39] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:10:39] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq","message":"Welcome, zaq!"}
+[2025-01-21 16:10:39] New connection: /127.0.0.1, zaq
+[2025-01-21 16:10:45] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:10:45] {"action":"welcome","ip":"/127.0.0.1","nickname":"sde","message":"Welcome, sde!"}
+[2025-01-21 16:10:45] New connection: /127.0.0.1, sde
+[2025-01-21 16:10:49] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"azq"}
+[2025-01-21 16:10:49] URVHCT: {"action":"game_created","ip":"/127.0.0.1","nickname":"azq","message":"Created a new game (open) with code: URVHCT"}
+[2025-01-21 16:10:49] URVHCT: {"action":"lobby","ip":"/127.0.0.1","nickname":"azq","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 16:10:53] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"sde"}
+[2025-01-21 16:10:53] URVHCT: {"action":"joined_game","ip":"/127.0.0.1","nickname":"sde","message":"Joined a random game: URVHCT"}
+[2025-01-21 16:10:53] URVHCT: {"action":"lobby","ip":"/127.0.0.1","nickname":"sde","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 16:10:57] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 16:10:57] URVHCT: {"action":"joined_game","ip":"/127.0.0.1","nickname":"zaq","message":"Joined a random game: URVHCT"}
+[2025-01-21 16:10:57] URVHCT: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 16:10:59] URVHCT: {"action":"start_game","ip":"/127.0.0.1","nickname":"azq"}
+[2025-01-21 16:11:08] URVHCT: {"action":"submit_answers","answers":{"Country":"dsaads","City":"vvvvvv","Animal":"vdsfd","Plant":"v"},"ip":"/127.0.0.1","nickname":"azq"}
+[2025-01-21 16:11:12] URVHCT: {"action":"submit_answers","answers":{"Country":"asd","Plant":"asdasddsa","Food":"asdas"},"ip":"/127.0.0.1","nickname":"sde"}
+[2025-01-21 16:11:17] URVHCT: {"action":"submit_answers","answers":{"Country":"c","City":"cvv","Animal":"v","Plant":"vvv"},"ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 16:11:39] URVHCT: {"action":"submit_answers","answers":{"Country":"rrrrrrrr"},"ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-21 16:11:40] URVHCT: {"action":"submit_answers","answers":{"Country":"rrrrrrrr"},"ip":"/127.0.0.1","nickname":"sde"}
+[2025-01-21 16:11:42] URVHCT: {"action":"submit_answers","answers":{"Country":"rrrrrrrr","City":"rrr","Animal":"rrr","Plant":"rrrr","Food":"rrrr"},"ip":"/127.0.0.1","nickname":"azq"}
+[2025-01-21 16:18:55] Communication error with client: Connection reset
+[2025-01-21 16:18:55] Communication error with client: Connection reset
+[2025-01-21 16:18:55] Communication error with client: Connection reset
+[2025-01-21 16:20:00] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:20:00] {"action":"welcome","ip":"/127.0.0.1","nickname":"cde","message":"Welcome, cde!"}
+[2025-01-21 16:20:00] New connection: /127.0.0.1, cde
+[2025-01-21 16:20:02] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:20:02] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw","message":"Welcome, xsw!"}
+[2025-01-21 16:20:02] New connection: /127.0.0.1, xsw
+[2025-01-21 16:20:04] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:20:04] {"action":"welcome","ip":"/127.0.0.1","nickname":"ŻAQ","message":"Welcome, ŻAQ!"}
+[2025-01-21 16:20:04] New connection: /127.0.0.1, ŻAQ
+[2025-01-21 16:20:08] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"ŻAQ"}
+[2025-01-21 16:20:08] KJJUUS: {"action":"game_created","ip":"/127.0.0.1","nickname":"ŻAQ","message":"Created a new game (open) with code: KJJUUS"}
+[2025-01-21 16:20:08] KJJUUS: {"action":"lobby","ip":"/127.0.0.1","nickname":"ŻAQ","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 16:20:11] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 16:20:11] URVHCT: {"action":"joined_game","ip":"/127.0.0.1","nickname":"xsw","message":"Joined a random game: URVHCT"}
+[2025-01-21 16:20:11] URVHCT: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsw","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 16:20:17] Communication error with client: Connection reset
+[2025-01-21 16:26:44] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:26:44] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq1","message":"Welcome, zaq1!"}
+[2025-01-21 16:26:44] New connection: /127.0.0.1, zaq1
+[2025-01-21 16:26:47] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:26:47] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw","message":"Welcome, xsw!"}
+[2025-01-21 16:26:47] New connection: /127.0.0.1, xsw
+[2025-01-21 16:26:50] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:26:50] {"action":"welcome","ip":"/127.0.0.1","nickname":"cde","message":"Welcome, cde!"}
+[2025-01-21 16:26:50] New connection: /127.0.0.1, cde
+[2025-01-21 16:26:55] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 16:26:55] CQVLIQ: {"action":"game_created","ip":"/127.0.0.1","nickname":"zaq1","message":"Created a new game (open) with code: CQVLIQ"}
+[2025-01-21 16:26:55] CQVLIQ: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq1","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 16:26:58] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 16:26:58] CQVLIQ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"xsw","message":"Joined a random game: CQVLIQ"}
+[2025-01-21 16:26:58] CQVLIQ: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsw","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 16:27:01] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 16:27:01] CQVLIQ: {"action":"joined_game","ip":"/127.0.0.1","nickname":"cde","message":"Joined a random game: CQVLIQ"}
+[2025-01-21 16:27:01] CQVLIQ: {"action":"lobby","ip":"/127.0.0.1","nickname":"cde","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 16:27:03] CQVLIQ: {"action":"start_game","ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 16:28:32] CQVLIQ: {"action":"submit_answers","answers":{"Country":"ffff","City":"ffffff","Animal":"f","Plant":"f","Food":"f"},"ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 16:28:36] CQVLIQ: {"action":"submit_answers","answers":{"Country":"asddas","City":"dasdas","Animal":"dsadas","Plant":"fff"},"ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 16:28:40] CQVLIQ: {"action":"submit_answers","answers":{"Animal":"fff","Plant":"f","Food":"ff"},"ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 16:29:42] CQVLIQ: {"action":"submit_answers","answers":{"Country":"yy","City":"y","Animal":"yy"},"ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 16:29:43] CQVLIQ: {"action":"submit_answers","answers":{"Country":"yy","City":"ewfs","Plant":"yt"},"ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 16:29:45] CQVLIQ: {"action":"submit_answers","answers":{"Country":"yyyyy","City":"yy","Animal":"yy","Plant":"yy","Food":"yyy"},"ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 16:30:24] CQVLIQ: {"action":"submit_answers","answers":{"Country":"asdsda","City":"ee","Animal":"eeeeeeee","Plant":"e"},"ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-21 16:30:28] CQVLIQ: {"action":"submit_answers","answers":{"Country":"eeeeeee","Plant":"ee"},"ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-21 16:30:31] CQVLIQ: {"action":"submit_answers","answers":{"Country":"eeee","Animal":"ee","Food":"ee"},"ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 16:30:32] CQVLIQ: Game over. Final scores sent to all players.
+[2025-01-21 16:35:34] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:35:34] {"action":"welcome","ip":"/127.0.0.1","nickname":"cd33e","message":"Welcome, cd33e!"}
+[2025-01-21 16:35:34] New connection: /127.0.0.1, cd33e
+[2025-01-21 16:35:36] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:35:36] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw2","message":"Welcome, xsw2!"}
+[2025-01-21 16:35:36] New connection: /127.0.0.1, xsw2
+[2025-01-21 16:35:37] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-21 16:35:37] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq1","message":"Welcome, zaq1!"}
+[2025-01-21 16:35:37] New connection: /127.0.0.1, zaq1
+[2025-01-21 16:35:40] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"cd33e"}
+[2025-01-21 16:35:40] DRECFK: {"action":"game_created","ip":"/127.0.0.1","nickname":"cd33e","message":"Created a new game (open) with code: DRECFK"}
+[2025-01-21 16:35:40] DRECFK: {"action":"lobby","ip":"/127.0.0.1","nickname":"cd33e","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-21 16:35:43] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"xsw2"}
+[2025-01-21 16:35:43] DRECFK: {"action":"joined_game","ip":"/127.0.0.1","nickname":"xsw2","message":"Joined a random game: DRECFK"}
+[2025-01-21 16:35:43] DRECFK: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsw2","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 16:35:46] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 16:35:46] DRECFK: {"action":"joined_game","ip":"/127.0.0.1","nickname":"zaq1","message":"Joined a random game: DRECFK"}
+[2025-01-21 16:35:46] DRECFK: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq1","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-21 16:35:51] DRECFK: {"action":"start_game","ip":"/127.0.0.1","nickname":"cd33e"}
+[2025-01-21 16:36:18] DRECFK: {"action":"submit_answers","answers":{"Country":"wwwwww","City":"www","Animal":"w"},"ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 16:36:20] DRECFK: {"action":"submit_answers","answers":{"City":"wwwwww","Animal":"www","Plant":"w"},"ip":"/127.0.0.1","nickname":"xsw2"}
+[2025-01-21 16:36:22] DRECFK: {"action":"submit_answers","answers":{"Country":"wwwwwwwwwwww","Animal":"wwww","Food":"wwww"},"ip":"/127.0.0.1","nickname":"cd33e"}
+[2025-01-21 16:37:18] DRECFK: {"action":"submit_answers","answers":{},"ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 16:37:19] DRECFK: {"action":"submit_answers","answers":{"Country":"oooooooo","City":"oio","Animal":"ooo"},"ip":"/127.0.0.1","nickname":"xsw2"}
+[2025-01-21 16:37:21] DRECFK: {"action":"submit_answers","answers":{"Country":"ooo","City":"ooo"},"ip":"/127.0.0.1","nickname":"cd33e"}
+[2025-01-21 16:37:41] DRECFK: {"action":"submit_answers","answers":{"Country":"zzzzz","City":"zz","Animal":"zzzz","Plant":"zzzzzzzzz","Food":"z"},"ip":"/127.0.0.1","nickname":"zaq1"}
+[2025-01-21 16:37:42] DRECFK: {"action":"submit_answers","answers":{"Country":"zzzzz","City":"z","Animal":"zzzzzzz","Plant":"zzzzzz"},"ip":"/127.0.0.1","nickname":"xsw2"}
+[2025-01-21 16:37:45] DRECFK: {"action":"submit_answers","answers":{"Country":"zzzzzzzz","City":"zzzzzzzzz","Animal":"zzzzzzz"},"ip":"/127.0.0.1","nickname":"cd33e"}
+[2025-01-21 16:37:45] DRECFK: Game over. Final scores sent to all players.
+[2025-01-21 16:44:19] Communication error with client: Connection reset
+[2025-01-21 16:44:21] Communication error with client: Connection reset
+[2025-01-21 16:44:22] Communication error with client: Connection reset
+[2025-01-24 03:08:00] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-24 03:08:00] {"action":"welcome","ip":"/127.0.0.1","nickname":"zaq","message":"Welcome, zaq!"}
+[2025-01-24 03:08:00] New connection: /127.0.0.1, zaq
+[2025-01-24 03:08:05] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-24 03:08:05] {"action":"welcome","ip":"/127.0.0.1","nickname":"xsw","message":"Welcome, xsw!"}
+[2025-01-24 03:08:05] New connection: /127.0.0.1, xsw
+[2025-01-24 03:08:12] {"action":"prompt_nickname","ip":"/127.0.0.1","message":"Please enter your nickname:"}
+[2025-01-24 03:08:12] {"action":"welcome","ip":"/127.0.0.1","nickname":"cde","message":"Welcome, cde!"}
+[2025-01-24 03:08:12] New connection: /127.0.0.1, cde
+[2025-01-24 03:08:17] {"action":"create_game","game_type":"open","ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-24 03:08:17] QEOXML: {"action":"game_created","ip":"/127.0.0.1","nickname":"cde","message":"Created a new game (open) with code: QEOXML"}
+[2025-01-24 03:08:17] QEOXML: {"action":"lobby","ip":"/127.0.0.1","nickname":"cde","message":"Moved to Lobby. Waiting for other players..."}
+[2025-01-24 03:08:20] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-24 03:08:20] QEOXML: {"action":"joined_game","ip":"/127.0.0.1","nickname":"xsw","message":"Joined a random game: QEOXML"}
+[2025-01-24 03:08:20] QEOXML: {"action":"lobby","ip":"/127.0.0.1","nickname":"xsw","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-24 03:08:23] {"action":"join_game_random","ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-24 03:08:23] QEOXML: {"action":"joined_game","ip":"/127.0.0.1","nickname":"zaq","message":"Joined a random game: QEOXML"}
+[2025-01-24 03:08:23] QEOXML: {"action":"lobby","ip":"/127.0.0.1","nickname":"zaq","message":"Moved to Lobby. Waiting to start..."}
+[2025-01-24 03:08:27] QEOXML: {"action":"start_game","ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-24 03:08:33] QEOXML: {"action":"submit_answers","answers":{},"ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-24 03:08:37] QEOXML: {"action":"submit_answers","answers":{},"ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-24 03:08:44] QEOXML: {"action":"submit_answers","answers":{},"ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-24 03:10:31] QEOXML: {"action":"submit_answers","answers":{"Country":"mamcao","City":"Minsk"},"ip":"/127.0.0.1","nickname":"zaq"}
+[2025-01-24 03:10:34] QEOXML: {"action":"submit_answers","answers":{"Country":"Macao","City":"Monmaco"},"ip":"/127.0.0.1","nickname":"xsw"}
+[2025-01-24 03:10:38] QEOXML: {"action":"submit_answers","answers":{"Country":"macao","City":"minsk"},"ip":"/127.0.0.1","nickname":"cde"}
+[2025-01-24 03:11:13] Communication error with client: Connection reset
+[2025-01-24 03:11:19] Communication error with client: Connection reset
+[2025-01-24 03:11:20] Communication error with client: Connection reset
