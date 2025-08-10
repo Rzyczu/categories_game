@@ -105,7 +105,7 @@ java --module-path "./javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javaf
 ---
 
 ## License
-MIT (or choose another license).
+MIT
 
 ---
 
