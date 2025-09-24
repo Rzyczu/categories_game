@@ -2,7 +2,16 @@
 
 A lightweight LAN multiplayer implementation of the classic **Categories** (pl. *Państwa–Miasta*) game, built in **Java** with a simple **JavaFX** GUI and a **TCP** server. Players connect over a local network, get a random starting letter, and race to submit valid answers in several categories. Answers are validated against an on‑disk **SQLite** dictionary.
 
-> Tech: Java **22**, JavaFX **23**, **TCP sockets**, **Gson** (JSON), **SQLite JDBC**, **Maven**
+---
+
+ ## Tech
+ 
+- **Java 22**
+- **JavaFX 23**
+- **TCP sockets**
+- **Gson** (JSON)
+- **SQLite JDBC**
+- **Maven**
 
 ---
 
