@@ -1,4 +1,4 @@
-# Categories (Państwa–Miasta) — LAN Multiplayer in Java
+# Categories (PL: Państwa–Miasta) — LAN Multiplayer in Java
 
 A lightweight LAN multiplayer implementation of the classic **Categories** (pl. *Państwa–Miasta*) game, built in **Java** with a simple **JavaFX** GUI and a **TCP** server. Players connect over a local network, get a random starting letter, and race to submit valid answers in several categories. Answers are validated against an on‑disk **SQLite** dictionary.
 
@@ -93,14 +93,11 @@ java --module-path "./javafx-sdk-23.0.1/lib" --add-modules javafx.controls,javaf
 
 ---
 
-## Known limitations / TODO
-- LAN‑only TCP; **no encryption/auth**.
-- Server state is in‑memory; restart resets active rooms.
-- Dictionary is static (SQLite). Consider plural/synonym handling, diacritics normalization and duplicates policy.
-- No in‑game chat.
-- Minimal error handling for disconnects.
-- Consider Maven‑based JavaFX modules (or Gradle) to avoid local SDK path flags.
-- Dockerfile for server would simplify onboarding on LAN.
+## Demo
+
+<img width="395" height="325" alt="473054773_2040447319701725_7307215845514079421_n" src="https://github.com/user-attachments/assets/1aa5790c-a74c-41fd-b146-fa0e23525143" />
+<img width="399" height="331" alt="474612616_1089640132846938_5129652740233410511_n" src="https://github.com/user-attachments/assets/39766cfc-9e67-4f94-a9bc-29b11379daa9" />
+<img width="401" height="347" alt="474645895_1164742601986864_3873738802279541582_n" src="https://github.com/user-attachments/assets/13f796d6-f0a7-475e-967f-0d0c650d78fb" />
 
 ---
 
